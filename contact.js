@@ -5,34 +5,16 @@ function ValidationEvent() {
     var message = document.getElementById("message").value; 
     var emailExp = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/; 
 
-    if (firstName != '' && lastName != '' && email != '') { 
-        alert("Error! Please enter require fields...")
-        return false 
+    if (firstName != "" && lastName != "" && email != "") { 
+        alert("Error! Please enter require fields...");
+        return false;
     } 
     if (email.match(emailExp)) {
-        alert("Error! Invalid email")
+        alert("Error! Invalid email");
+        return false; 
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
