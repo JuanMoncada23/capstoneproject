@@ -1,87 +1,59 @@
-function ValidationEvent() {
-    var firstName = document.getElementById("firstname").value; 
-    var lastName = document.getElementById("lastname").value; 
-    var email = document.getElementById("email").value; 
-    var message = document.getElementById("message").value; 
-    var emailExp = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/; 
 
-    if (firstName != "" && lastName != "" && email != "") { 
-        alert("Error! Please enter require fields...");
-        return false;
-    } 
-    if (email.match(emailExp)) {
-        alert("Error! Invalid email");
-        return false; 
-    }
+// Fetching HTML Elements in Variables by ID.
+var x = document.getElementById("form_sample");
+var createform = document.createElement('form'); // Create New Element Form
+createform.setAttribute("action", ""); // Setting Action Attribute on Form
+createform.setAttribute("method", "post"); // Setting Method Attribute on Form
+x.appendChild(createform);
 
-}
+var heading = document.createElement('h2'); // Heading of Form
+heading.innerHTML = "Contact Form ";
+createform.appendChild(heading);
 
+var line = document.createElement('hr'); // Giving Horizontal Row After Heading
+createform.appendChild(line);
 
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
 
+var namelabel = document.createElement('label'); // Create Label for Name Field
+namelabel.innerHTML = "Your Name : "; // Set Field Labels
+createform.appendChild(namelabel);
 
-/*var a = document.getElementById("contact_form");
-var createform = document.createElement('form');
-createform.setAttribute("action", ""); 
-createform.setAttribute("method", "post");
-a.appendChild(createform)
+var inputelement = document.createElement('input'); // Create Input Field for Name
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("name", "dname");
+createform.appendChild(inputelement);
 
-var heading = document.createElement('h2');
-heading.innerHTML = "Contact Form"; 
-createform.appendChild(heading); 
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
 
-var line = document.createElement('hr');
-createform.appendChild(line); 
+var emaillabel = document.createElement('label'); // Create Label for E-mail Field
+emaillabel.innerHTML = "Your Email : ";
+createform.appendChild(emaillabel);
 
-var linebreak = document.createElement('br'); 
-createform.appendChild(linebreak); 
+var emailelement = document.createElement('input'); // Create Input Field for E-mail
+emailelement.setAttribute("type", "text");
+emailelement.setAttribute("name", "demail");
+createform.appendChild(emailelement);
 
-var firstname = document.createElement('label'); 
-firstname.innerHTML = "First Name * "; 
-createform.appendChild(firstname); 
+var emailbreak = document.createElement('br');
+createform.appendChild(emailbreak);
 
-var firstinput = document.createElement('input');
-firstinput.setAttribute("type", "text");
-firstinput.setAttribute("name", "dname");
-createform.appendChild(firstinput); 
+var messagelabel = document.createElement('label'); // Append Textarea
+messagelabel.innerHTML = "Your Message : ";
+createform.appendChild(messagelabel);
 
-var linebreak = document.createElement('br'); 
-createform.appendChild(linebreak); 
+var texareaelement = document.createElement('textarea');
+texareaelement.setAttribute("name", "dmessage");
+createform.appendChild(texareaelement);
 
-var lastname = document.createElement('label');
-lastname.innerHTML = "Last Name *"; 
-createform.appendChild(lastname); 
+var messagebreak = document.createElement('br');
+createform.appendChild(messagebreak);
 
-var lastinput = document.createElement('input');
-lastinput.setAttribute("type", "text");
-lastinput.setAttribute("name", "dname");
-createform.appendChild(lastinput); 
- 
-var linebreak = document.createElement('br'); 
-createform.appendChild(linebreak); 
-
-var emaillabel = document.createElement('label');
-emaillabel.innerHTML = "Email Address * "; 
-createform.appendChild(emaillabel); 
-
-var emailinput = document.createElement('input');
-emailinput.setAttribute("type", "text");
-emailinput.setAttribute("name", "dname");
-createform.appendChild(emailinput); 
-
-var linebreak = document.createElement('br'); 
-createform.appendChild(linebreak); 
-
-var messagelabel = document.createElement('label');
-messagelabel.innerHTML = "Message (Optional)"; 
-createform.appendChild(messagelabel); 
-
-var messagetext = document.createElement('textarea'); 
-messagetext.setAttribute("name", "dname"); 
-createform.appendChild(messagetext)
-
-var sendbutton = document.createElement('input'); 
-sendbutton.setAttribute("type", "submit");
-sendbutton.setAttribute("name", "dsubmit"); 
-sendbutton.setAttribute("value", "Send"); 
-createform.appendChild(sendbutton);*/ 
+var submitelement = document.createElement('input'); // Append Submit Button
+submitelement.setAttribute("type", "submit");
+submitelement.setAttribute("name", "dsubmit");
+submitelement.setAttribute("value", "Submit");
+createform.appendChild(submitelement);
 

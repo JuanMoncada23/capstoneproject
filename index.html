@@ -1,19 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html> 
+<html> 
+<head> 
 <meta charset="UTF-8">
-<link rel="stylesheet" href="style.css"> 
-</head>
+<link rel="stylesheet" href="style.css"></link>
+
+</head> 
 <body>
-<h1>Welcome to How 2 Inform!</h1> 
-<h2>Website is underconstruction!</h2> 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#activites">Activites</a>
-  <a href="contact.html">Contact</a>
-  <a href="#about">About</a>
+
+<img class="logo" href="#myPage" src="logo.jpg" alt="Logo" height="73" width="95">
+
+<ul class="topnav">
+ 
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="images/1.jpg" style="width:100%">
+  <div class="text">Welcome to How 2 Inform!
+Website is underconstruction!</div>
 </div>
-<script src="contact.js"></script>
+
+<div class="mySlides fade">
+  
+  <img src="images/2.jpg" style="width:100%">
+  <div class="text">Welcome to How 2 Inform!
+Website is underconstruction!</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/3.jpg" style="width:100%">
+  <div class="text">Welcome to How 2 Inform!
+Website is underconstruction!</div>
+</div>
+
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="bg bg-blur"></div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
 </body>
 </html>
-
