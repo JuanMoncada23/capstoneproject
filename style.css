@@ -4,9 +4,9 @@ body{
 /* Add a orange background */
 .bg{
 	background-color: #fcc26a;
-	height:1000px;
+	height:200px;
     text-align: center;
-    line-height: 800px;
+    line-height: 200px;
 }
 
 /* Add a transparent orange background */

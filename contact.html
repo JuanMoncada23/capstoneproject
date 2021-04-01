@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css"></link>
 <link rel="stylesheet" href="CONTACT.css"></link>
+<link rel="stylesheet" href="contactstyle.css"></link> 
 </head>
 <body>
 
@@ -55,15 +56,15 @@ Website is underconstruction!</div>
 
 <div class="container">
 <div class="main">
-<form action="#" method="post" onsubmit="return ValidationEvent()">
+<form action="/contact.js" method="post" id="form_sample">
 <label>First Name: * </label> 
-<input id="firstname" name="firstname" placeHolder="Bob" type="text"> 
+<input id="firstname" name="firstname" placeHolder="Bob" type="text" required> 
 <label>Last Name: * </label>
-<input id="lastname" name="lastname" placeHolder="Fuller" type="text"> 
+<input id="lastname" name="lastname" placeHolder="Fuller" type="text" required> 
 <label>Email: * </label> 
-<input id="email" name="email" placeHolder="bobfuller@email.com" type="text"> 
+<input id="email" name="email" placeHolder="bobfuller@email.com" type="text" required> 
 <label>Message:</label> 
-<textarea cols="40" rows="7"> 
+<textarea cols="30" rows="7"> 
 </textarea> 
 <input type="submit" value="Send"> 
 
