@@ -34,6 +34,13 @@
   height: 32rem;
 }
 
+/* Main Logo style */ 
+img{
+  display: block;
+  text-align: center;
+  margin-left: 130%;  
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
