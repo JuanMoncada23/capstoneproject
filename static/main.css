@@ -81,7 +81,10 @@ body {
 }
 #aboutheading{
     color: white; 
+    font-family: 'Times New Roman', Times;
+    text-align: center;
 }
+
 .about{
     border: 5px solid white; 
     color: white;

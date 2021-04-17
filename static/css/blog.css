@@ -11,6 +11,13 @@
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
 }
+
+#ab2{
+  font-family: 'Times New Roman', Times;
+  text-align: center;
+}
+
+
 #tips{
   margin-left: auto;
   margin-right: auto;
