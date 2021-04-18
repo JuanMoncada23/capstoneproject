@@ -1,0 +1,126 @@
+h1{
+    text-align: left;
+    text-transform: uppercase; 
+    color: white; 
+    font-style: italic; 
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+}
+h3{
+    text-align: center;
+    text-transform: uppercase; 
+    color: white; 
+    font-style: italic; 
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+}
+h4{
+    text-transform: uppercase; 
+    color: white; 
+    font-style: italic; 
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+}
+p{
+    text-transform: uppercase; 
+    color: white; 
+    font-family: "Times New Roman"; 
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; 
+}
+
+* {
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.contest{
+  width: 300px;
+}
+/*
+.contest{
+  display: block;
+  margin-right: auto;
+  width: 620px; 
+  height: 500px; 
+}*/ 
+.a{
+  text-transform: uppercase; 
+  color: rgb(241, 241, 241); 
+  background-color: blue;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+.b{
+  text-transform: uppercase; 
+  color: rgb(241, 241, 241); 
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+.graphic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 20%; 
+}
+ .misinformation-container{
+   position: absolute; 
+   top: 314px; 
+   right: 0px;
+   text-align: right;
+   float: right;
+
+   /*display: flex;*/ 
+   /*
+   position: absolute; 
+   top: 314px; 
+   right: 0px;
+   text-align: right;
+   float: right; */ 
+ }
+ .malinformation-container{
+   text-align: right;
+   float: right; 
+   margin-top: auto;
+   /*
+   position: absolute; 
+   top: 1097px; 
+   right: 0px;
+   text-align: right;
+   float: right;*/ 
+ }
+ .pledge-container{
+   text-align: center;
+ }
+
+ .contest-container{
+   text-align: center;
+ }
+
+ .memefolder{
+   margin-right: auto;
+ }
+ /*
+ .memefolder{
+   display: block;
+   margin-left: auto;
+   width: 620px; 
+   height: 500px; 
+ }*/ 
