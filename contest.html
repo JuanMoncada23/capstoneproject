@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How 2 Inform</title>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+<link href="static/css/blog.css" rel="stylesheet">
+<link href="static/css/carousel.css" rel="stylesheet">
+<link href="aboutstyle.css" rel="stylesheet"> 
+<style>
+body{background-color: #fa420a; }
+
+.p-2 link-secondary{
+ color: white;
+}
+h4{
+color: yellow;
+}
+
+
+
+<!-- Prize block spilt-->
+
+.spilt_left{
+	float:left;
+	width:45%;
+	
+}
+
+.spilt_right{
+	float:right;
+	width:47%;
+	padding-right:210px;
+}
+
+<!-- list style-->
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+.spilt_left{
+	float:left;
+	width:47%;
+	padding-left: 210px;
+}
+
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+ol.gradient-list > li {
+  background: white;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+ol.gradient-list > li::before, ol.gradient-list > li::after {
+  background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  content: '';
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+ol.gradient-list > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #1d1f20;
+  display: flex;
+  font: 900 1.5em/1 'Montserrat';
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+}
+ol.gradient-list > li:nth-child(10n+1):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ol.gradient-list > li:nth-child(10n+2):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ol.gradient-list > li:nth-child(10n+3):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ol.gradient-list > li:nth-child(10n+4):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ol.gradient-list > li:nth-child(10n+5):before {
+  background: linear-gradient(135deg, #a2ed56 0%, #fddc32 100%);
+}
+ol.gradient-list > li:nth-child(10n+6):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ol.gradient-list > li:nth-child(10n+7):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ol.gradient-list > li:nth-child(10n+8):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ol.gradient-list > li:nth-child(10n+9):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ol.gradient-list > li:nth-child(10n+10):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+ol.gradient-list > li + li {
+  margin-top: 2rem;
+}
+
+
+<!-- Rounded border -->
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 20px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+		<img class="logo" href="#myPage" src="static/img/Logo.jpg" alt="Logo" height="150" width="150">
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#"></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="text-white" href="index.html#">Home</a>
+      <a class="text-white" href="content.html#">Content</a>
+      <a class="text-white" href="contact.html#">Contact</a>
+      <a class="text-white" href="contest.html#">Contest</a> 
+      <a class="text-white" href="resource.html#">Resource</a>
+      <a class="text-white" href="about.html#">About</a>
+    </nav>
+  </div>
+</div>
+
+<div class="pdf">
+<embed src="static/img/H2I TikTok Contest Rules.pdf" width="820px" height="1100px" margin-left="auto"/>
+</div>
+  
+
+<hr class="rounded">
+<main class="spilt_left">
+
+<div >
+	<h4>Winner Prize for Individual submission</h4>
+   <ol class="gradient-list">
+    <li>$125 Amazon Gift Card</li>
+    <li>$100 Amazon Gift Card</li>
+    <li>$75 Amazon Gift Card</li>
+	</ol>
+
+</main>
+<main class="spilt_right">
+
+	<h4>Winner Prize for Group submission</h4>
+   <ol class="gradient-list">
+    <li>$250 Amazon Gift Card</li>
+    <li>$150 Amazon Gift Card</li>
+    <li>$100 Amazon Gift Card</li>
+	</ol>
+  </main>
+
+
+</body>
+</html>
