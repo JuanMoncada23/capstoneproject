@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(248, 4, 4, 0.753);
+    background-color: #fef8e6;
 }
 * {
     box-sizing: border-box;
@@ -65,12 +65,13 @@ body {
 }
 
 #kids{
-    color: white; 
-    margin-bottom: 42%;
+    color: rgb(233, 19, 19); 
+    margin-bottom: 18.40%;
+    /*margin-bottom: 42%;*/ 
 }
 
 #adults{
-    color: white; 
+    color: rgb(0, 0, 0); 
     text-align: center;
     text-emphasis-position: top;
 }
@@ -80,35 +81,37 @@ body {
     margin-bottom: 20%;
 }
 #aboutheading{
-    color: white; 
+    color: rgb(0, 0, 0); 
     font-family: 'Times New Roman', Times;
     text-align: center;
 }
 
 .about{
-    border: 5px solid white; 
-    color: white;
+    border: 5px solid rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
+}
+#ab2{
+    text-align: center;
+    font-size: large;
 }
 
-.container {
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    
-}
-
-
-/*
-
-html{
-    height: 70%;
-}
-.center{
+#tips{
+    /*
+    width: 40%;
+    text-align: center;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */ 
 }
-.kids{
-    display: block;
-    margin-left: auto;  
-    margin-right: auto;
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-*/
