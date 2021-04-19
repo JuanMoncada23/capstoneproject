@@ -1,194 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How 2 Inform</title>
-<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
-
-<link href="static/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
-<link href="static/css/blog.css" rel="stylesheet">
-<link href="static/css/carousel.css" rel="stylesheet">
-<link href="aboutstyle.css" rel="stylesheet"> 
-<style>
-body{background-color: #fa420a; }
-
-.p-2 link-secondary{
- color: white;
-}
-h4{
-color: yellow;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How 2 Inform</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link href="static/css/header.css" rel="stylesheet">
+    <link href="static/css/contest.css" rel="stylesheet">
 
 
-
-<!-- Prize block spilt-->
-
-.spilt_left{
-	float:left;
-	width:45%;
-	
-}
-
-.spilt_right{
-	float:right;
-	width:47%;
-	padding-right:210px;
-}
-
-<!-- list style-->
-
-main {
-  display: block;
-  margin: 0 auto;
-  max-width: 40rem;
-  padding: 1rem;
-}
-
-.spilt_left{
-	float:left;
-	width:47%;
-	padding-left: 210px;
-}
-
-ol.gradient-list {
-  counter-reset: gradient-counter;
-  list-style: none;
-  margin: 1.75rem 0;
-  padding-left: 1rem;
-}
-ol.gradient-list > li {
-  background: white;
-  border-radius: 0 0.5rem 0.5rem 0.5rem;
-  counter-increment: gradient-counter;
-  margin-top: 1rem;
-  min-height: 3rem;
-  padding: 1rem 1rem 1rem 3rem;
-  position: relative;
-}
-ol.gradient-list > li::before, ol.gradient-list > li::after {
-  background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
-  border-radius: 1rem 1rem 0 1rem;
-  content: '';
-  height: 3rem;
-  left: -1rem;
-  overflow: hidden;
-  position: absolute;
-  top: -1rem;
-  width: 3rem;
-}
-ol.gradient-list > li::before {
-  align-items: flex-end;
-  content: counter(gradient-counter);
-  color: #1d1f20;
-  display: flex;
-  font: 900 1.5em/1 'Montserrat';
-  justify-content: flex-end;
-  padding: 0.125em 0.25em;
-  z-index: 1;
-}
-ol.gradient-list > li:nth-child(10n+1):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
-}
-ol.gradient-list > li:nth-child(10n+2):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
-}
-ol.gradient-list > li:nth-child(10n+3):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
-}
-ol.gradient-list > li:nth-child(10n+4):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
-}
-ol.gradient-list > li:nth-child(10n+5):before {
-  background: linear-gradient(135deg, #a2ed56 0%, #fddc32 100%);
-}
-ol.gradient-list > li:nth-child(10n+6):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
-}
-ol.gradient-list > li:nth-child(10n+7):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
-}
-ol.gradient-list > li:nth-child(10n+8):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
-}
-ol.gradient-list > li:nth-child(10n+9):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
-}
-ol.gradient-list > li:nth-child(10n+10):before {
-  background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
-}
-ol.gradient-list > li + li {
-  margin-top: 2rem;
-}
-
-
-<!-- Rounded border -->
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 20px;
-}
-
-</style>
 </head>
+
 <body>
-<div class="container">
-  <header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
-		<img class="logo" href="#myPage" src="static/img/Logo.jpg" alt="Logo" height="150" width="150">
+  <div class="container">
+    <header class="blog-header py-3">
+        <div class="row text-center ">
+            <div class="col-4">
+            </div>
+            <div class="col-4 align-self-end">
+                <img class="img-fluid" href="#myPage" src="static/img/Logo.jpg" alt="Logo" height="150" width="150">
+            </div>
+	
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary" href="index.html#">Home</a>
+			<a class="p-2 link-secondary" href="kids.html#">Kids</a>
+			<a class="p-2 link-secondary" href="resource.html#">Resources</a>
+            <a class="p-2 link-secondary" href="contest.html#">Contest</a>
+			<a class="p-2 link-secondary" href="contact.html#">Contact</a>
+            
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+      
+      <div class="p-4 mb-3 bg-warning rounded">
+        <h4 class="fst-italic">Winner Prize for Individual submission</h4>
+        <ol class="gradient-list">
+          <li>$125 Amazon Gift Card</li>
+          <li>$100 Amazon Gift Card</li>
+          <li>$75 Amazon Gift Card</li>
+        </ol>
       </div>
-      <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#"></a>
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="link-secondary" href="#" aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-        </a>
-        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      
+      <div class="p-4 mb-3 bg-warning rounded">
+        <h4 class="fst-italic">Winner Prize for Group submission</h4>
+        <ol class="gradient-list">
+          <li>$250 Amazon Gift Card</li>
+          <li>$150 Amazon Gift Card</li>
+          <li>$100 Amazon Gift Card</li>
+        </ol>
       </div>
     </div>
-  </header>
+    
+    
 
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <a class="text-white" href="index.html#">Home</a>
-      <a class="text-white" href="content.html#">Content</a>
-      <a class="text-white" href="contact.html#">Contact</a>
-      <a class="text-white" href="contest.html#">Contest</a> 
-      <a class="text-white" href="resource.html#">Resource</a>
-      <a class="text-white" href="about.html#">About</a>
-    </nav>
-  </div>
-</div>
-
-<div class="pdf">
-<embed src="static/img/H2I TikTok Contest Rules.pdf" width="820px" height="1100px" margin-left="auto"/>
-</div>
   
+    <div class="col-md-8" style="font-family:Times New Roman">
+      <h1 class="pb-4 mb-4 fst-italic border-bottom text-center" style="font-family:Times New Roman";>
+        H2I TikTok Contest Rules
+      </h1>
+	  
 
-<hr class="rounded">
-<main class="spilt_left">
+	<div class="text-center">
+	 <a href="https://www.amazon.com/clouddrive/share/ncORlTKLqIyR4o5RiWnEvH7QZrWHCHALWf9XaV4uwnc" target="_blank">
+    <img class="img-fluid" src="static/img/bearpool.jpg"/></a>
+	  
+</div>
 
-<div >
-	<h4>Winner Prize for Individual submission</h4>
-   <ol class="gradient-list">
-    <li>$125 Amazon Gift Card</li>
-    <li>$100 Amazon Gift Card</li>
-    <li>$75 Amazon Gift Card</li>
-	</ol>
 
-</main>
-<main class="spilt_right">
+<br>
+      <article class="blog-post">
+        <h2 class="blog-post-title"></h2>
+        <p>Contest begins on April 15, 2021. Open to all enrolled 6th-12th grade students residing in the United States. Submissions must be received by 11:59pm on May 1, 2021. Individual and group submissions are welcome. Limit of <b>five</b> submissions from individuals/groups.
+</p>
+        <p>Participants must follow TikTok’s terms of service and privacy policy to be eligible. Parental consent must be obtained where necessary. Content must be written and created by named student participant(s) at time of entry. Participants may be disqualified if: a) participant is deemed to be in violation of these rules, b) if submission infringes or violates any rights of any third party, c) or if a participant acted in a manner that is inappropriate to include in the contest. Vulgar, racially, or ethnically insensitive content of any kind will not be tolerated and will result in participant’s immediate disqualification from the contest.
+</p>
+        
+        
+       
+        <h4>To enter:</h4>
+        
+        <ol class="b">
+        <li>Select a meme from our Meme Pool at: <a href="https://www.amazon.com/clouddrive/share/ncORlTKLqIyR4o5RiWnEvH7QZrWHCHALWf9XaV4uwnc" target="_blank">how2inform@lewisu.edu</a>.</li> 
+        <li> Use the <span style="color:blue">I</span><span style="color:red">N</span><span style="color:#7c15eb">F</span><span style="color:#e62991">O</span><span style="color:green">R</span><span style="color:#000000">M</span> tools to discover examples of inaccurate information in your chosen meme.</li>
+        <li> Make a TikTok video featuring the meme and your findings using <span style="color:blue">I</span><span style="color:red">N</span><span style="color:#7c15eb">F</span><span style="color:#e62991">O</span><span style="color:green">R</span><span style="color:#000000">M</span> to explain your	discoveries. Show off your imagination and creativity!</li>
+        <li> Follow H2I on TikTok (@how2inform) and Instagram (@how2inform).</li>
+        <li> Tag H2I on TikTok (@how2inform) and at least three other TikTok
+ 	accounts (individuals, groups, and/or organizations) of your choice.</b></li>
+        <li>Add hashtags 
+          <b>#H2I, #LewisUniversity</b>, and at least <b>three</b> of the following of your choice:   <b>#H2INFORM #WordsMatter #MemeChallenge #DeconstructMemes    				#Deconstruction #Investigate #Identify #Narrative #Tone #Fact #Fiction   				#Opinion #Context #Reliable #Credible #Misinformation #Malinformation 		
+#Disinformation #ConspiracyTheory #VerifyB4UAmplify
+</b></li>
+        <li>Share!</li>
 
-	<h4>Winner Prize for Group submission</h4>
-   <ol class="gradient-list">
-    <li>$250 Amazon Gift Card</li>
-    <li>$150 Amazon Gift Card</li>
-    <li>$100 Amazon Gift Card</li>
-	</ol>
-  </main>
+        
+      </ol>
+      <hr>
+
+        <p>Winners will be selected by an internal voting process based on creativity and accurate use of <span style="color:blue">I</span><span style="color:red">N</span><span style="color:#7c15eb">F</span><span style="color:#e62991">O</span><span style="color:green">R</span><span style="color:#000000">M</span>
+to deconstruct selected meme in an original TikTok video, following H2I’s TikTok and Instagram 
+accounts, tagging H2I on TikTok and at least <b>three</b> other active TikTok accounts, adding hashtags 
+<b>#H21, #LewisUniversity</b>, and your pick of at least <b>three</b> of the following:
+</p>
+        <p class="text-center"><b>#H2INFORM #WordsMatter #MemeChallenge #DeconstructMemes #Deconstruction #Investigate #Identify #Narrative #Tone #Fact #Fiction #Opinion #Context #Reliable #Credible #Misinformation #Malinformation #Disinformation #ConspiracyTheory #VerifyB4UAmplify</b></p>
+        <p>Winners will receive prizes in the form of Amazon gift cards of varying amounts. A total of six prizes will be awarded. For group submissions: First place will receive a $250 gift card, second place will receive a $150 gift card, and third place will receive a $100 gift card. For individual submissions: First place will receive a $125 gift card, second place will receive a $100 gift card, and third place will receive a $75 gift card. </p>
+        <p> How2Inform will notify winners via direct messages to entrant’s TikTok and Instagram accounts by May 10, 2021. Response is necessary for delivery of prize. If winner(s) fail to respond within 5 business days of notification by How2Inform, prize(s) will be forfeited and alternative winner(s) will be selected. If no suitable winner(s), no prize(s) will be distributed.</p>
+        <h3 class="text-danger"  style="font-family:Georgia">!!! DON'T FORGET TO TAG US ON <span class="text-success">TikTok </span> & <span class="text-success">Instagram </span>#H2I</h3>
+      </article>
+    
+
+    </div>
+
+  </div>
+
+
 
 
 </body>
