@@ -2,10 +2,9 @@ h1{
     text-align: left;
     text-transform: uppercase; 
     color: rgb(0, 0, 0); 
-    font-style: italic; 
     font-family: "Lucida Console", "Courier New", monospace;   
 }
-h3{
+#learn{
     text-align: center;
     text-transform: uppercase; 
     color: rgb(0, 0, 0); 
@@ -13,7 +12,7 @@ h3{
     font-family: "Lucida Console", "Courier New", monospace;  
 }
 * {
-  box-sizing: border-box;
+  
   /*border-radius: 25px;*/ 
 }
 .column {
@@ -38,13 +37,17 @@ h3{
   width: 40%;
   height: 20%; 
 }
- .misinformation-container{
+.intro-container{
+ float: left;
+}
+.misinformation-container{
    position: absolute; 
    top: 275px; 
    right: 0px;
+   /*
    text-align: right;
-   float: right;
- }
+   float: right;*/ 
+ } 
  .disinformation-container{
    float: left;
    
@@ -66,54 +69,58 @@ h3{
  .memefolder{
    margin-right: auto;
  }
+
  #intro{
    font-family: 'Times New Roman', Times;
    color: rgb(0, 0, 0);
-   font-size: larger;
+   font-size: large;
    border-style: solid;
    border-width: 5px;
    border-color: rgb(0, 0, 0);
    background-color: rgba(255, 255, 255, 0.911);
+   /*
    border-radius: 0%;
    height: 150px;
-   width: 47%;
+   width: 47%; */
  }
+
+
  #misinfo{
   font-family: 'Times New Roman', Times;
   color: rgb(0, 0, 0);
-  font-size: larger;
+  font-size: large;
   border-style: solid;
   border-width: 5px;
   border-color: rgb(0, 0, 0);
-  border-radius: 0%;
   background-color: rgba(255, 255, 255, 0.911);
+  /*border-radius: 0%;
   height: 124px;
-  width: 100%;
+  width: 100%;*/ 
  }
  #disinfo{
   font-family: 'Times New Roman', Times;
   color: rgb(0, 0, 0);
-  font-size: larger;
+  font-size: large;
   border-style: solid;
   border-width: 5px;
   border-color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.911);
   border-radius: 0%;
-  height: 150px;
-  width: 75%;
+  /*height: 150px;*/ 
+  /*width: 75%;*/ 
  }
  #malinfo{
   font-family: 'Times New Roman', Times;
   text-align: left;
   color: rgb(0, 0, 0);
-  font-size: larger;
+  font-size: large;
   border-style: solid;
   border-width: 5px;
   border-color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.911);
   border-radius: 0%;
-  height: 150px;
-  width: 120%;
+  /*height: 150px;/*
+  /*width: 120%;*/ 
  }
  #p{
   font-size: x-large;
@@ -130,6 +137,5 @@ h3{
    width: 40%;
    float: left;
    margin-left: 2%;
-
- }
+}
 

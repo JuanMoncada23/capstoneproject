@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <title> Welcome  </title>
   </head>
+  <link href="contact/contactstyle.css" rel="stylesheet">
+  <link href="static/main.css" rel="stylesheet">
   <body>
     <?php
 
@@ -48,10 +50,14 @@
     if( $stmt->affected_rows == 1){
 
 ?>
-<p>This is where to put the confirmation html.</p>
+<p>Thank you for submitting this form.</p> 
+<p>We will be in contact soon.</p> 
+<!-- <p>This is where to put the confirmation html.</p> --> 
 
 <?php }  else{  ?>
-  <p>This is where to put an error message.</p>
+  <p>Error. Please try submitting form again.<p> 
+  <p>If more problems occur please email us at How2Inform@lewisu.edu</p>
+  <!--<p>This is where to put an error message.</p> --> 
 <?php }
 
 
