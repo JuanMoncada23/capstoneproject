@@ -42,6 +42,8 @@
         <a class="p-2 link-secondary" href="resource.html#">Resources</a>
         <a class="p-2 link-secondary" href="contest.html#">Contest</a>
         <a class="p-2 link-secondary" href="contact.html#">Contact</a>
+		 <a class="p-2 link-secondary" href="contact.html#">Contact</a>
+		 <a class="p-2 link-secondary" href="survey.html#">Survey</a>
       </nav>
     </div>
 </div>
