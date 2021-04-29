@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<!-- h2i survey
-     -->
+<!-- h2i survey  -->
 <html>
   <head>
     <meta charset="UTF-8">

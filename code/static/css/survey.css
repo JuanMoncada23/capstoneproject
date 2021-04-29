@@ -1,7 +1,10 @@
+/* Add red * after each question */
 .form-group.required li:after {
    content:"*";
    color:red;
 }
+
+/* Survey Form */
 .form-group required
 {
 
