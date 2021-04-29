@@ -1,31 +1,32 @@
+/*Styles background color of website*/
 body {
     background-color: #fef8e6;
 }
+/*Styles a border box for our website*/
 * {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    /*border-radius: 25px;*/
 }
-
+/*Styles header text*/
 .header-wrapper {
     font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/*Styles header content*/
 .header-img-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/*Styles header image*/
 .header-img-wrapper .logo {
     height: 9.375em;
     width: 9.375em;
 }
-
+/*Styles header content*/
 .carousel-main-wrapper {
     height: 100vh;
     width: 100%;
@@ -33,83 +34,77 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+/*Styles header content*/
 .carousel {
     width: 100%;
 }
-
+/*Styles header image*/
 .carousel-inner img {
     margin: auto;
 }
-
+/*Styles home page image*/
 .home-page-img {
     height: 30em;
     width: 60%;
     object-fit: contain;
     object-position: center;
 }
-
+/*Styles header content*/
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
+/*Styles kids content*/
 .kids {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+/*Styles baby image*/
 .baby {
     float: left;
 }
-
+/*Styles kids  content*/
 #kids{
     color: rgb(233, 19, 19); 
     margin-bottom: 18.40%;
-    /*margin-bottom: 42%;*/ 
 }
-
+/*Styles adults content*/
 #adults{
     color:rgb(233, 19, 19); 
     text-align: center;
     text-emphasis-position: top;
 }
+/*Styles contest content*/
 #contest{
     color: red; 
     margin-left: 50%;
     margin-bottom: 20%;
 }
+/*Styles aboutheading*/
 #aboutheading{
     color: rgb(0, 0, 0); 
     font-family: 'Times New Roman', Times;
     text-align: center;
 }
-
+/*Styles about content*/
 .about{
     border: 5px solid rgb(0, 0, 0); 
     color: rgb(0, 0, 0);
 }
+/*Styles about content*/
 #ab2{
     text-align: center;
     font-size: large;
 }
-
-#tips{
-    /*
-    width: 40%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; */ 
-}
-
+/*Styles images next to each other in footer*/
 .column {
     float: left;
     width: 33.33%;
     padding: 10px;
-  }
-  
-  /* Clear floats after image containers */
+}
+/* Clear floats after image containers */
 .row::after {
     content: "";
     clear: both;

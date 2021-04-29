@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,6 +26,7 @@
 </head>
 
 <body>
+<!-- Container head -->
 <div class="container-head">
     <header class="blog-header py-3">
       <div class="row flex-nowrap header-wrapper">
@@ -41,14 +41,14 @@
         <a class="p-2 link-secondary" href="kids.html#">Kids</a>
         <a class="p-2 link-secondary" href="resource.html#">Resources</a>
         <a class="p-2 link-secondary" href="contest.html#">Contest</a>
-        <a class="p-2 link-secondary" href="contact.html#">Contact</a>
+        <a class="p-2 link-secondary" href="contact.php#">Contact</a>
 		 <a class="p-2 link-secondary" href="contact.html#">Contact</a>
 		 <a class="p-2 link-secondary" href="survey.html#">Survey</a>
       </nav>
     </div>
 </div>
 
-
+<!-- Container for contact form--> 
 <div class="container">
     <div style="text-align:center">
         <h2>Contact Us</h2>
@@ -67,9 +67,7 @@
     <input type="submit" value="Send">
 </div>
 </div>
-
-
-
+<!-- Bootstrap--> 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
     integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
     crossorigin="anonymous"></script>

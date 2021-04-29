@@ -1,41 +1,9 @@
-/*
-div#main{
-width:830px;
-height:650px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-font-family:'Times New Roman', Times 
-}
-*/
-
-/*DONT NEED!!!!/*   
-/*
-div#form_sample{
-border:1px solid rgb(0, 0, 0);
-width:300px;
-padding:0 50px 15px;
-margin-top:20px;
-box-shadow:0 0 15px;
-border-radius:6px;
- 
-}
-#main h1{
-margin-top:40px
-}
-
-hr{
-margin-top:-5px
-}
-/*/
-
-/* NEED!! */
-
+/*Styles labels*/ 
 label{
     float:left;
     font-size:16px
 }
-
+/*Styles text boxes*/ 
 input[type="text"]{
     width:100%;
     margin-top:10px;
@@ -45,6 +13,7 @@ input[type="text"]{
     border:3px solid #2BC1F2; 
     resize:vertical;
 }
+/*Styles text area*/ 
 textarea{
     width:100%;
     border:3px solid #2BC1F2;
@@ -54,6 +23,7 @@ textarea{
     height:100px;
     resize:vertical; 
 }
+/*Styles submit button*/ 
 input[type="submit"]{
     width:15%;
     padding:10px 45px;

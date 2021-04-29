@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- h2i registration
      -->
 <html>
@@ -13,14 +12,10 @@
     <?php
 
 // Get form data values
-
       $first = $_POST["firstname"];
       $last = $_POST["lastname"];
       $email = $_POST["email"];
       $message = $_POST["message"];
-
-
-
 
     if (!$first || !$last || !$email ) {
         echo "You have not entered all required details.  Please go back and try again.";
@@ -36,11 +31,9 @@
     //connect to the database
     @$db = new mysqli('localhost', 'h2i_user', 'capstone', 'h2i');
 
-
     if ($db->connect_error) {
         die('Connect Error ' . $db->connect_errno . ': ' . $db->connect_error);
     }
-
 
     $query = "insert into users(first_name, last_name, email_address, message) values (?, ?, ?, ?)";
     $stmt = $db->prepare($query);
@@ -59,7 +52,6 @@
   <p>If more problems occur please email us at How2Inform@lewisu.edu</p>
   <!--<p>This is where to put an error message.</p> --> 
 <?php }
-
 
     $db->close();
 
