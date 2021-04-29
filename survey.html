@@ -12,7 +12,17 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <link href="static/css/header.css" rel="stylesheet">
     <link href="static/css/survey.css" rel="stylesheet">
+<script>
 
+function validateForm() {
+  var x = document.forms["surveyForm"]["grade"].value;
+  if (x == "") {
+    alert("Grade must be selected");
+    return false;
+  }
+}
+
+</script>
 
 </head>
 <body>
@@ -82,7 +92,7 @@
     </div>
 
 
-    <form>
+    <form name="surveyForm" action="handle_survey.php" method="post">
         <ol>
             <!--------------------Question 1----------------------->
             <div class="row p-3">
@@ -92,8 +102,25 @@
                         <label class='control-label'>
                             <li>What grade are you in?</li>
                         </label>
-                        <input type="grade" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                               placeholder="Enter grade" required>
+                        <div class="row">
+                            <div class="col-sm-4 pt-3">
+                                <select class="form-select" name="grade" id="grade" required>
+                                    <option value="" selected disabled>---- Choose -----</option>
+                                    <option value="Under 5">Under 5th Grade</option>
+                                    <option value="5">5th Grade</option>
+                                    <option value="6">6th Grade</option>
+                                    <option value="7">7th Grade</option>
+                                    <option value="8">8th Grade</option>
+                                    <option value="9">9th Grade</option>
+                                    <option value="10">10th Grade</option>
+                                    <option value="11">11th Grade</option>
+                                    <option value="12">12th Grade</option>
+                                    <option value="Above 12">Above 12th Grade</option>
+                                </select>
+                            </div>
+                        </div>
+                       <!-- <input type="grade" name="grade" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Enter grade" required>-->
                     </div>
                 </div>
                 <div class="col-sm-3"></div>
@@ -109,20 +136,20 @@
                             <li>Do you identify as male, female, or non-binary?</li>
                         </label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios1" value="Male"
+                            <input class="form-check-input" type="radio" name="gender" value="Male"
                                    required>
                             <label class="form-check-label">Male</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios1" value="Female">
+                            <input class="form-check-input" type="radio" name="gender" value="Female">
                             <label class="form-check-label">
                                 Female
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios1" value="Non-binary">
+                            <input class="form-check-input" type="radio" name="gender" value="Non-binary">
                             <label class="form-check-label">
                                 Non-binary
                             </label>
@@ -143,14 +170,14 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios2" value="Yes"
+                            <input class="form-check-input" type="radio" name="q3" value="Yes"
                                    required>
                             <label class="form-check-label">
                                 Yes
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios2" value="No">
+                            <input class="form-check-input" type="radio" name="q3" value="No">
                             <label class="form-check-label">
                                 No
                             </label>
@@ -170,13 +197,13 @@
                         </label>
                         <div class="form-check">
 
-                            <input class="form-check-input" type="radio" name="exampleRadios3" value="Yes"
+                            <input class="form-check-input" type="radio" name="q4" value="Yes"
                                    required>
                             <label class="form-check-label">
                                 Yes
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios3" value="No">
+                            <input class="form-check-input" type="radio" name="q4" value="No">
                             <label class="form-check-label">
                                 No
                             </label>
@@ -199,13 +226,13 @@
                         </label>
                         <div class="form-check">
 
-                            <input class="form-check-input" type="radio" name="exampleRadios4" value="Yes"
+                            <input class="form-check-input" type="radio" name="q5" value="Yes"
                                    required>
                             <label class="form-check-label">
                                 Yes
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios4" value="No">
+                            <input class="form-check-input" type="radio" name="q5" value="No">
                             <label class="form-check-label">
                                 No
                             </label>
@@ -229,13 +256,13 @@
                         </label>
                         <div class="form-check">
 
-                            <input class="form-check-input" type="radio" name="exampleRadios5" value="Yes"
+                            <input class="form-check-input" type="radio" name="q6" value="Yes"
                                    required>
                             <label class="form-check-label">
                                 Yes
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios5" value="No">
+                            <input class="form-check-input" type="radio" name="q6" value="No">
                             <label class="form-check-label">
                                 No
                             </label>
@@ -257,13 +284,13 @@
                         </label>
                         <div class="form-check">
 
-                            <input class="form-check-input" type="radio" name="exampleRadios6" value="Yes"
+                            <input class="form-check-input" type="radio" name="q7" value="Yes"
                                    required>
                             <label class="form-check-label">
                                 Yes
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios6" value="No">
+                            <input class="form-check-input" type="radio" name="q7" value="No">
                             <label class="form-check-label">
                                 No
                             </label>
@@ -286,11 +313,11 @@
                             </li>
                         </label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios7" value="Yes"
+                            <input class="form-check-input" type="radio" name="q8" value="Yes"
                                    required>
                             <label class="form-check-label">Yes</div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios7" value="No">
+                            <input class="form-check-input" type="radio" name="q8" value="No">
                             <label class="form-check-label">No</label>
                         </div>
                     </div>
