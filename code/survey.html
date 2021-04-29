@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>H2I Survey</title>
+    <!--Social Media Icon Library-->
+    <!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <!--    <script src="https://kit.fontawesome.com/b1dce9dd26.js" crossorigin="anonymous"></script>-->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link href="static/css/header.css" rel="stylesheet">
+    <link href="static/css/survey.css" rel="stylesheet">
+<script>
+
+function validateForm() {
+  var x = document.forms["surveyForm"]["grade"].value;
+  if (x == "") {
+    alert("Grade must be selected");
+    return false;
+  }
+}
+
+</script>
+
+</head>
+<body>
+
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row text-center ">
+            <div class="col-4">
+            </div>
+            <div class="col-4 align-self-end">
+                <img class="img-fluid" href="#myPage" src="static/img/Logo.jpg" alt="Logo" height="150" width="150">
+            </div>
+
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary" href="index.html#">Home</a>
+            <a class="p-2 link-secondary" href="kids.html#">Kids</a>
+            <a class="p-2 link-secondary" href="resource.html#">Resources</a>
+            <a class="p-2 link-secondary" href="contest.html#">Contest</a>
+            <a class="p-2 link-secondary" href="contact.html#">Contact</a>
+			<a class="p-2 link-secondary" href="survey.html#">Survey</a>
+
+        </nav>
+    </div>
+</div>
+
+
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 border-bottom">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@how2inform/video/6953678446593690886"
+                        data-video-id="6953678446593690886" style="max-width: 605px;min-width: 325px;">
+                <section><a target="_blank" title="@how2inform"
+                            href="https://www.tiktok.com/@how2inform">@how2inform</a>
+                    <p><a title="h2i" target="_blank" href="https://www.tiktok.com/tag/h2i">##H2I</a> <a title="foryou"
+                                                                                                         target="_blank"
+                                                                                                         href="https://www.tiktok.com/tag/foryou">##foryou</a>
+                        <a title="lewisuniversity" target="_blank" href="https://www.tiktok.com/tag/lewisuniversity">##lewisuniversity</a>
+                        <a title="how2inform" target="_blank"
+                           href="https://www.tiktok.com/tag/how2inform">##how2inform</a> <a title="misinformation"
+                                                                                            target="_blank"
+                                                                                            href="https://www.tiktok.com/tag/misinformation">##misinformation</a>
+                        <a title="disinformation" target="_blank" href="https://www.tiktok.com/tag/disinformation">##disinformation</a>
+                        <a title="malinformation" target="_blank" href="https://www.tiktok.com/tag/malinformation">##malinformation</a>
+                        <a title="wordsmatter" target="_blank" href="https://www.tiktok.com/tag/wordsmatter">##wordsmatter</a>
+                        <a title="verifyb4uamplify" target="_blank" href="https://www.tiktok.com/tag/verifyb4uamplify">##verifyb4uamplify</a>
+                        <a title="onestepcloser" target="_blank" href="https://www.tiktok.com/tag/onestepcloser">##OneStepCloser</a>
+                    </p> <a target="_blank" title="♬ Swear By It - Clutch"
+                            href="https://www.tiktok.com/music/Swear-By-It-6777237779509151746">♬ Swear By It -
+                        Clutch</a></section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+
+    <div class="row p-3">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <h2 class="font-weight-bold text-center mb-2">H2I Survey</h2>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+
+    <form name="surveyForm" action="handle_survey.php" method="post">
+        <ol>
+            <!--------------------Question 1----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>What grade are you in?</li>
+                        </label>
+                        <div class="row">
+                            <div class="col-sm-4 pt-3">
+                                <select class="form-select" name="grade" id="grade" required>
+                                    <option value="" selected disabled>---- Choose -----</option>
+                                    <option value="Under 5">Under 5th Grade</option>
+                                    <option value="5">5th Grade</option>
+                                    <option value="6">6th Grade</option>
+                                    <option value="7">7th Grade</option>
+                                    <option value="8">8th Grade</option>
+                                    <option value="9">9th Grade</option>
+                                    <option value="10">10th Grade</option>
+                                    <option value="11">11th Grade</option>
+                                    <option value="12">12th Grade</option>
+                                    <option value="Above 12">Above 12th Grade</option>
+                                </select>
+                            </div>
+                        </div>
+                       <!-- <input type="grade" name="grade" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Enter grade" required>-->
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+
+            <!--------------------Question 2----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>Do you identify as male, female, or non-binary?</li>
+                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" value="Male"
+                                   required>
+                            <label class="form-check-label">Male</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" value="Female">
+                            <label class="form-check-label">
+                                Female
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" value="Non-binary">
+                            <label class="form-check-label">
+                                Non-binary
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <!--------------------Question 3----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>Before you reviewed the H2I materials, had you heard about misinformation,
+                                disinformation, malinformation, or conspiracy theories?
+                            </li>
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" value="Yes"
+                                   required>
+                            <label class="form-check-label">
+                                Yes
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" value="No">
+                            <label class="form-check-label">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <!--------------------Question 4----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>Did you know they were all different?</li>
+                        </label>
+                        <div class="form-check">
+
+                            <input class="form-check-input" type="radio" name="q4" value="Yes"
+                                   required>
+                            <label class="form-check-label">
+                                Yes
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" value="No">
+                            <label class="form-check-label">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <!--------------------Question 5----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>Did H2I give you tools to better recognize examples of
+                                misinformation,
+                                disinformation, malinformation, or conspiracy theories?
+                            </li>
+                        </label>
+                        <div class="form-check">
+
+                            <input class="form-check-input" type="radio" name="q5" value="Yes"
+                                   required>
+                            <label class="form-check-label">
+                                Yes
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" value="No">
+                            <label class="form-check-label">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <!--------------------Question 6----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>Since being introduced to H2I,have you seen examples of
+                                misinformation, disinformation, malinformation, or conspiracy theories online (or
+                                anywhere
+                                else)?
+                            </li>
+                        </label>
+                        <div class="form-check">
+
+                            <input class="form-check-input" type="radio" name="q6" value="Yes"
+                                   required>
+                            <label class="form-check-label">
+                                Yes
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" value="No">
+                            <label class="form-check-label">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <!--------------------Question 7----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>Have you used any H2I tools to verify if something was
+                                true?
+                            </li>
+                        </label>
+                        <div class="form-check">
+
+                            <input class="form-check-input" type="radio" name="q7" value="Yes"
+                                   required>
+                            <label class="form-check-label">
+                                Yes
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" value="No">
+                            <label class="form-check-label">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <!--------------------Question 8----------------------->
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label class='control-label'>
+                            <li>Did you (or will you) take the H2I social media pledge to
+                                make the
+                                Internet
+                                safer for all?
+                            </li>
+                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" value="Yes"
+                                   required>
+                            <label class="form-check-label">Yes</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" value="No">
+                            <label class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </ol>
+    </form>
+</div>
+</body>
+</html>
