@@ -24,4 +24,6 @@ Execution Instructions
 ![database table](https://user-images.githubusercontent.com/54727154/116838941-ed05f700-ab95-11eb-9b76-446ee6ff54b4.jpg)
 
 # Application Workflow 
-[appflow.pdf](https://github.com/JuanMoncada23/capstoneproject/files/6412777/appflow.pdf)
+![appflow](https://user-images.githubusercontent.com/54727154/116839614-9fd75480-ab98-11eb-90bc-5f5678af35e7.png)
+
+
