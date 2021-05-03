@@ -25,4 +25,7 @@ Execution Instructions
 # Application Workflow 
 ![appflow](https://user-images.githubusercontent.com/54727154/116839614-9fd75480-ab98-11eb-90bc-5f5678af35e7.png)
 
-
+# Contact Information
+Questions? Comments? Feel free to reach out! 
+* Juan Moncada: juanmmoncada@lewisu.edu 
+* Danhong Li (Emma): danhongli@lewisu.edu
