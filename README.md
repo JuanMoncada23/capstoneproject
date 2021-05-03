@@ -20,5 +20,6 @@ Execution Instructions
 
 # Database 
 ![database table](https://user-images.githubusercontent.com/54727154/116838941-ed05f700-ab95-11eb-9b76-446ee6ff54b4.jpg)
+![database chart](https://user-images.githubusercontent.com/54727154/116839016-3d7d5480-ab96-11eb-9ce1-ba7658c71abb.jpg)
 
 
