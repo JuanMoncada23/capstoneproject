@@ -19,3 +19,4 @@ Execution Instructions
 * Double click on Index.html and our code will run locally on your computer. You can do the same with the rest of the files. 
 
 # Database 
+![database table](https://user-images.githubusercontent.com/54727154/116838941-ed05f700-ab95-11eb-9b76-446ee6ff54b4.jpg)
