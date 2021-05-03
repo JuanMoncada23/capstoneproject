@@ -21,7 +21,8 @@ Execution Instructions
 # Database table for survey 
  ![database chart](https://user-images.githubusercontent.com/54727154/116839016-3d7d5480-ab96-11eb-9ce1-ba7658c71abb.jpg)
 # Database table for contact form 
-![database table](https://user-images.githubusercontent.com/54727154/116838941-ed05f700-ab95-11eb-9b76-446ee6ff54b4.jpg)
+![database table](https://user-images.githubusercontent.com/54727154/116839723-00ff2800-ab99-11eb-8645-0186b8b24665.png)
+
 
 # Application Workflow 
 ![appflow](https://user-images.githubusercontent.com/54727154/116839614-9fd75480-ab98-11eb-90bc-5f5678af35e7.png)
