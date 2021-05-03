@@ -13,3 +13,7 @@
 # Execute 
 Required Files 
 * Everything in the code folder
+
+Execution Instructions
+* Git clone repository onto your computer using terminal or powershell 
+* Double click on Index.html and our code will run locally on your computer. You can do the same with the rest of the files. 
