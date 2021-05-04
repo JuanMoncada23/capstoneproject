@@ -20,7 +20,8 @@ Execution Instructions
 
 # Database Tables 
  ![database chart](https://user-images.githubusercontent.com/54727154/116839016-3d7d5480-ab96-11eb-9ce1-ba7658c71abb.jpg)
- ![database table](https://user-images.githubusercontent.com/54727154/116839723-00ff2800-ab99-11eb-8645-0186b8b24665.png)
+![database survey](https://user-images.githubusercontent.com/54727154/116956317-9f9f8d80-ac5a-11eb-95c5-d156c2acf87f.png)
+
 
 # Application Workflow 
 ![appflow](https://user-images.githubusercontent.com/54727154/116839614-9fd75480-ab98-11eb-90bc-5f5678af35e7.png)
